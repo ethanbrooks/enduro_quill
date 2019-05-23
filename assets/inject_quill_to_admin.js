@@ -1,6 +1,6 @@
 // inject quill css into the admin interface
-$('head').append('<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">')
-$('head').append('<link href="https://cdn.quilljs.com/1.3.3/quill.bubble.css" rel="stylesheet">')
+$('head').append('<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">')
+$('head').append('<link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">')
 
 // * ———————————————————————————————————————————————————————— * //
 // *	quill directive
@@ -9,7 +9,7 @@ enduro_admin_app.compileProvider
 	.directive('quill', function () {
 		return {
 			link: function (scope, element, attr) {
-				$.getScript('https://cdn.quilljs.com/1.3.3/quill.js', function () {
+				$.getScript('https://cdn.quilljs.com/1.3.6/quill.js', function () {
 
 					var editor = new Quill(element[0], brick_admin_settings.enduro_quill)
 
